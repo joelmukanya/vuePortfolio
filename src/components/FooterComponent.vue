@@ -4,7 +4,7 @@
             <aside class="col-md-4">
                 <h4 class="display-4">Copyright</h4>
                 <p class="lead">Joel's Portofio &copy; 
-                    <span class="currYear"></span>
+                    <span class="currYear">{{getCurrYear}}</span>
                 </p>
             </aside>
             <aside class="col-md-5">
@@ -21,6 +21,10 @@
 
 <script>
 export default {
-
+    computed: {
+        getCurrYear() {
+            return new Date().getFullYear();
+        }
+    }
 }
 </script>

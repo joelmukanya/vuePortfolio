@@ -21,6 +21,11 @@
                             <i class="bi bi-server"></i>
                         </router-link> 
                     </li>
+                    <li class="nav-item">
+                        <router-link to="/contact" class="routerLink">Contact
+                            <i class="bi bi-person-lines-fill"></i>
+                        </router-link> 
+                    </li>
                 </ul>
             </div>
         </div>
