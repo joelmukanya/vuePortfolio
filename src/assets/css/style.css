@@ -8,7 +8,7 @@
     --primaryFontColor: white;
     --secFontColor: dark;
     --primaryBgColor: black;
-    --secondaryBgColor: rgba(82, 80, 80, .8); 
+    --secondaryBgColor: rgba(82, 80, 80, .5); 
 }
 /* Select all elements */
 *{
@@ -17,14 +17,17 @@
     box-sizing: border-box;
 }
 /* header */
-div#header {
+#header {
     opacity: .7;
     z-index: 10;
 }
 div#main {
     z-index: -1;
 }
-
+/* heading */
+h1, h2, h3, h4, h5, h6 {
+    color: #2c3e50;
+}
 /* On scroll, change the background color of the header component.*/
 .headerBgColor {
     background-color: var(--primaryBgColor);
@@ -36,9 +39,24 @@ div#main {
 
 /* Media query */
 @media screen and (max-width: 600px) {
-    div.collapse nav {
-        display: flex;
+    div.collapse {
+        display: inline-flex;
         flex-flow: column wrap;
-        width: 100%;
+    }
+    /* ul */
+    ul.navbar-nav {
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    /* router-link */
+    .routerLink {
+        display: inline-block;
+        margin: 5px ;
     }
 }
+/* Footer */
+#footer {
+    background-color: var(--secondaryBgColor);
+    color: black;
+}
+

@@ -33,7 +33,7 @@ nav a {
   font-weight: bold;
   color: #ffffff;
   padding: 20px;
-  background-color: darkgray;
+  background-color: rgba(116, 108, 108, .7);
   border-radius: 20px;
   margin: 0 10px;
 }

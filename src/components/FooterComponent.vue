@@ -1,18 +1,21 @@
 <template>
-    <div class="container-fluid bg-dark">
-        <nav class="navbar navbar-expand-lg bg-transparent ">
-            <div class="container-fluid">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <nav>
-                        <router-link to="/">Home</router-link> |
-                        <router-link to="/about">About</router-link>
-                    </nav>
-                </div>
-            </div>
-        </nav>
+    <div id="footer" class="container-fluid d-flex flex-wrap bg-gradient">
+        <div class="row">
+            <aside class="col-md-4">
+                <h4 class="display-4">Copyright</h4>
+                <p class="lead">Joel's Portofio &copy; 
+                    <span class="currYear"></span>
+                </p>
+            </aside>
+            <aside class="col-md-5 float-end">
+                <h4 class="display-4">Navigation</h4>
+                <ul class="navbar-nav"> 
+                    <li class="nav-item">
+                        <router-link to="/">About</router-link> 
+                    </li>
+                </ul>
+            </aside>
+        </div>
     </div>
 </template>
 
@@ -21,7 +24,3 @@ export default {
 
 }
 </script>
-
-<style>
-
-</style>
