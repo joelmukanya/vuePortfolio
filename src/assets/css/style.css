@@ -46,17 +46,17 @@ h1, h2, h3, h4, h5, h6 {
     /* ul */
     ul.navbar-nav {
         flex-flow: row wrap;
-        justify-content: space-around;
+        justify-content: space-between;
     }
     /* router-link */
     .routerLink {
         display: inline-block;
-        margin: 5px ;
+        margin: 3px ;
     }
 }
 /* Footer */
 #footer {
     background-color: var(--secondaryBgColor);
-    color: black;
+    color: var(--primaryBgColor);
 }
 
