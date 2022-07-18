@@ -1,7 +1,7 @@
 <template>
-    <section id="landing " >
+    <section id="landing" class="container">
         <div class="row min-vh-100 bg-gradient">
-            <img :src="this.$store.state.profiles[0].url" alt="joel"/>
+            <img class="img-fluid profile-img" :src="this.$store.state.profiles[0].url" alt="joel"/>
         </div>
         <div class="row">
             <div class="wrapper col-md bg-transparent">
@@ -48,7 +48,7 @@ export default {
 }
 </script>
 
-<style scoped>
+<style>
     /* Landing */
     #landing img{
         scroll-margin: 1px;
