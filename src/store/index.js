@@ -22,6 +22,40 @@ export default createStore({
         'name': 'Joel',
         'url': "https://i.postimg.cc/zD64pgWS/joel2.jpg"
       }
+    ],
+    skills: [
+      {
+        'title': 'Leadership',
+        'percentage': 100
+      },
+      {
+        'title': 'Problem-solving',
+        'percentage': 100
+      },
+      {
+        'title': 'Teamwork',
+        'percentage': 100
+      },
+      {
+        'title': 'Self-development',
+        'percentage': 100
+      },
+      {
+        'title': 'Communication',
+        'percentage': 100
+      },
+      {
+        'title': 'Attention to details',
+        'percentage': 100
+      },
+      {
+        'title': 'Goal-oriented',
+        'percentage': 100
+      },
+      {
+        'title': 'Self-motivated',
+        'percentage': 100
+      }
     ]
   },
   getters: {
