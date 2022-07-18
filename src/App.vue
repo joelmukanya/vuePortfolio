@@ -31,7 +31,7 @@ nav {
 
 nav a {
   font-weight: bold;
-  color: #ffffff;
+  color: var(--primaryFontColor);
   padding: 20px;
   background-color: rgba(116, 108, 108, .7);
   border-radius: 20px;

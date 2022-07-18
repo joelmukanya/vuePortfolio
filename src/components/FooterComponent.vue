@@ -1,17 +1,17 @@
 <template>
     <div id="footer" class="container-fluid bg-gradient">
-        <div class="row d-flex flex-wrap">
-            <aside class="col-md-4">
+        <div class="row">
+            <aside class="col-md-6">
                 <h4 class="display-4">Copyright</h4>
                 <p class="lead">Joel's Portofio &copy; 
                     <span class="currYear">{{getCurrYear}}</span>
                 </p>
             </aside>
-            <aside class="col-md-5">
+            <aside class="col-md-6">
                 <h4 class="display-4">Navigation</h4>
-                <ul class="navbar-nav"> 
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 py-4"> 
                     <li class="nav-item">
-                        <router-link to="/">About</router-link> 
+                        <router-link to="/" class="routerLink">About</router-link> 
                     </li>
                 </ul>
             </aside>
