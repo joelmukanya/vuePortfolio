@@ -4,7 +4,7 @@
             <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-4">
                 <li class="nav-item">
                     <router-link to="/" class="routerLink">
-                        <img id="logo" class="img-fluid" :src="this.$store.state.profiles[1].url"  alt="logo"/>
+                        <img id="logo" class="img-fluid" src="https://i.postimg.cc/sxQ9v1g3/logo.jpg"  alt="logo"/>
                     </router-link> 
                 </li>
             </ul>

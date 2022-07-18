@@ -64,6 +64,19 @@ h1, h2, h3, h4, h5, h6 {
         min-height: 0vh!important;
     }
 }
+/* About me */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+.about-me-wrapper > p {
+    box-shadow: 1px 1px 2vw rgb(128, 125, 113),
+    2px 1px 4vw rgb(93, 91, 83);
+    padding: 1em;
+    line-height: 1.5em;
+    border-radius: 20px;
+    color: white;
+}
 /* Footer */
 #footer {
     background-color: var(--secondaryBgColor);

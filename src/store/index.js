@@ -15,13 +15,16 @@ export default createStore({
         'url': "https://i.postimg.cc/rwL322fD/joel3.jpg"
       },
       {
-        "name": "Logo",
-        "url": "https://i.postimg.cc/sxQ9v1g3/logo.jpg"
+        'name': 'Joel',
+        'url': "https://i.postimg.cc/W3tfwN1H/joel1.jpg"
+      },
+      {
+        'name': 'Joel',
+        'url': "https://i.postimg.cc/zD64pgWS/joel2.jpg"
       }
     ]
   },
   getters: {
-
   },
   mutations: {
   },
