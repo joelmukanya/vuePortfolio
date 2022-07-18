@@ -9,7 +9,7 @@
             </aside>
             <aside class="col-md-6">
                 <h4 class="display-4">Navigation</h4>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 py-4"> 
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
                     <li class="nav-item">
                         <router-link to="/" class="routerLink">About</router-link> 
                     </li>
