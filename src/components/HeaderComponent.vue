@@ -1,12 +1,18 @@
 <template>
     <nav id="header" :class="{headerBgColor: applyStyle}" class="navbar navbar-expand-lg bg-dark navbar-dark container-fluid position-sticky top-0">
         <div class="container">
-            
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-4">
+                <li class="nav-item">
+                    <router-link to="/" class="routerLink">
+                        <img id="logo" :src="this.$store.state.profiles[1].url"  alt="logo"/>
+                    </router-link> 
+                </li>
+            </ul>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon "></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mb-2 mb-lg-0 py-4"> 
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 py-4"> 
                     <li class="nav-item">
                         <router-link to="/" class="routerLink">About
                             <i class="bi bi-file-earmark-person"></i>
@@ -56,3 +62,9 @@ export default {
     }
 }
 </script>
+<style scoped>
+    #logo {
+        width: 3em;
+        object-fit: cover;
+    }
+</style>

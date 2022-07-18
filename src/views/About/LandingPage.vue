@@ -1,7 +1,7 @@
 <template>
     <section id="landing " >
         <div class="row min-vh-100 bg-gradient">
-            <img :src="this.$store.state.profiles[0]" alt="joel"/>
+            <img :src="this.$store.state.profiles[0].url" alt="joel"/>
         </div>
         <div class="row">
             <div class="wrapper col-md bg-transparent">
@@ -20,16 +20,11 @@
 export default {
   data() {
     return {
-        jobTitle : ["a CEO & Founder", "an IT Lecturer", "a Software Developer","a SQL Developer", "a Web Developer"],
-        // Declaring variables
-        cnt : 0,
-        title : "",
-        index : 0,
-        letter : "",
+        
     }
   },
   methods: {
-    funcTyping: () =>{
+    /*funcTyping: () =>{
         if(cnt > jobTitle.length ){
             // reset cnt
             this.cnt = 0;
@@ -45,10 +40,10 @@ export default {
             index = 0;
         }
         setTimeout(funcTyping, 200);
-    }
+    }*/
   },
   mounted() {
-    this.funcTyping();
+   // this.funcTyping();
   }
 }
 </script>
