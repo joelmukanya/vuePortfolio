@@ -2,16 +2,10 @@
   <section id="about-me" class="container">
     <div class="row">
         <div id="slider" class="col-md-6">
-          <div id="carouselProfile" class="carousel slide carousel-fade"    data-bs-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img class="d-block w-100 profile-imgs" alt="Joel Profile 1">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 profile-imgs" alt="Joel Profile 2">
-              </div>
-              <div class="carousel-item">
-                <img class="d-block w-100 profile-imgs" alt="Joel Profile 3">
+          <div id="carouselProfile" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-inner" >
+              <div class="carousel-item" v-for="(profile, index) in getProfiles" :key="index" :class="{active: index === 0 }">
+                <img :src="profile.url" class="d-block w-100 profile-imgs" :alt="profile.name+' Profile '+(index + 1)"/>
               </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#carouselProfile" data-bs-slide="prev">
@@ -45,7 +39,6 @@
     </div>
   </section>
 </template>
-
 <script>
 export default {
     computed: {
@@ -53,18 +46,6 @@ export default {
             return this.$store.state.profiles;
         }
     },
-    methods: {
-        loadImages() {
-            this.getProfiles.forEach( (item, index)=> {
-                document.querySelectorAll('.profile-imgs')[index].src = 
-                item.url;
-            })
-        }
-    },
-    mounted() {
-        this.loadImages(); 
-    }
-
 }
 </script>
 

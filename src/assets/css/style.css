@@ -35,7 +35,37 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primaryFontColor);
     opacity: .7;
 }
+/* Testimonials */
+.testimonial-img {
+    height: 15rem;
+    object-fit: cover;
+}
 
+/* Education */
+section#education {
+    scroll-margin: 8em;
+}
+/* Start creating a timeline */
+section .edu-col {
+    border-radius: 3em;
+}
+/* even */
+section .edu-col:nth-child(even) {
+    align-self: flex-end;
+    background-color: rgb(139, 150, 150);
+    border-left: 3em solid black;
+    box-shadow: 4px 3px 4px rgb(128, 125, 113),
+    4px 3px 6px rgb(108, 107, 105);
+    position: relative;
+}
+
+/* Odd */
+section .edu-col:nth-child(odd) {
+    background-color: rgb(103, 108, 94);
+    border-right: 3em solid black;
+    box-shadow: 4px 3px 4px rgb(72, 65, 33),
+    4px 3px 6px rgb(133, 129, 116);
+}
 
 /* Media query */
 @media screen and (max-width: 600px) {
@@ -64,6 +94,14 @@ h1, h2, h3, h4, h5, h6 {
     }
     #landing div.row {
         min-height: 0vh!important;
+    }
+    /* Developer */
+    #developer {
+        font-size: 3rem;
+    }
+    #developer::before {
+        font-size: 3rem;
+        display: block;
     }
 }
 /* About me */

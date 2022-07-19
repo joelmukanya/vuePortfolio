@@ -1,7 +1,7 @@
 <template>
     <nav id="header" :class="{headerBgColor: applyStyle}" class="navbar navbar-expand-lg bg-dark navbar-dark container-fluid position-sticky top-0">
         <div class="container">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0 py-4">
+            <ul class="navbar-nav me-auto">
                 <li class="nav-item">
                     <router-link to="/" class="routerLink">
                         <img id="logo" class="img-fluid" src="https://i.postimg.cc/sxQ9v1g3/logo.jpg"  alt="logo"/>
@@ -45,6 +45,7 @@ export default {
         return {
             isScrolled: false,
             applyStyle: false,
+            displayScrollY: '',
         }
     },
     methods: {
@@ -56,6 +57,9 @@ export default {
                 this.applyStyle = false;
             }
         }
+    },
+    updated() {
+        this.displayScrollY = window.scrollY;
     },
     mounted() {
         window.addEventListener('scroll', this.handleScroll);

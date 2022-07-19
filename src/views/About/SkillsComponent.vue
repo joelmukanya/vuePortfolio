@@ -9,8 +9,8 @@
         <div class="col">
             <div class="progress">
             <div class="progress-bar progress-bar-striped bg-success" 
-            role="progressbar" aria-valuenow="0"
-                :aria-valuemin="currPerc" :aria-valuemax="skill.percentage">
+            role="progressbar" :aria-valuenow="currPerc"
+                aria-valuemin="0" :aria-valuemax="skill.percentage">
                 <span class="progress-contents bg-black text-white fw-bolder fs-6 start-100 badge rounded-pill bg-transparent">{{currPerc}}%
                 </span>
             </div>
@@ -25,7 +25,8 @@
 export default {
     data() {
         return {
-            currPerc: 0
+            currPerc: 0,
+            cnt: null
         }
     },
     computed: {
@@ -33,15 +34,33 @@ export default {
             return this.$store.state.skills
         }
     },
-    updated() {
-        while(this.currPerc < this.skills) {
-            this.currPerc++;
+    methods: {
+        progressBarTimer() {
+            const navBar = document.querySelector('.progress-bar');
+            const observer = new IntersectionObserver(entries => {
+                entries.forEach( entry => {
+                    entry.target.classList.toggle('prgAnimation', entry.isIntersecting);
+                })
+            });
+            observer.observe(navBar);
         }
+    },
+    updated() {
+        this.progressBarTimer();
     }
-
 }
 </script>
 
 <style>
-
+.prgAnimation{
+    animation: progress-animation 10s alternate forwards;
+}
+@keyframes progress-animation {
+    from {
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
 </style>
