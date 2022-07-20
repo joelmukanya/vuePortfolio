@@ -22,6 +22,11 @@ export default {
         
     }
   },
+  methods: {
+    mouseHover() {
+      
+    }
+  }
 }
 </script>
 
@@ -40,7 +45,6 @@ export default {
         position: absolute;
         background-color: antiquewhite;
         border-radius: 20px;
-        /* margin-left: 5px; */
         padding-left: 8px;
     }
 </style>
