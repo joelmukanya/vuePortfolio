@@ -7,14 +7,6 @@
             <p class="h4 lead text-white">{{skill.title}}</p>
         </div>
         <div class="col">
-            <div class="progress">
-            <div class="progress-bar progress-bar-striped bg-success" 
-            role="progressbar" :aria-valuenow="currPerc"
-                aria-valuemin="0" :aria-valuemax="skill.percentage">
-                <span class="progress-contents bg-black text-white fw-bolder fs-6 start-100 badge rounded-pill bg-transparent">{{currPerc}}%
-                </span>
-            </div>
-            </div>
         </div>
         </div>
     </div>

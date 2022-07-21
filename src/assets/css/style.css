@@ -35,6 +35,19 @@ h1, h2, h3, h4, h5, h6 {
     color: var(--primaryFontColor);
     opacity: .7;
 }
+/* About me */
+.carousel-item img {
+    height: 400px;
+    object-fit: cover;
+}
+.about-me-wrapper > p {
+    box-shadow: 1px 1px 2vw rgb(128, 125, 113),
+    2px 1px 4vw rgb(93, 91, 83);
+    padding: 1em;
+    line-height: 1.5em;
+    border-radius: 20px;
+    color: var(--primaryFontColor);
+}
 /* Testimonials */
 .testimonial-img {
     height: 15rem;
@@ -67,11 +80,17 @@ section .edu-col:nth-child(odd) {
     4px 3px 6px rgb(133, 129, 116);
 }
 
+/* Resume */
+.software-developer {
+    background-color: var(--grayBgColor);
+    padding: 0 5px;
+}
 /* Media query */
 @media screen and (max-width: 600px) {
     /* Header */
     #header {
         opacity: 1;
+        z-index: 20;
     }
     /* Navbar */
     div.collapse {
@@ -103,19 +122,6 @@ section .edu-col:nth-child(odd) {
         font-size: 3rem;
         display: block;
     }
-}
-/* About me */
-.carousel-item img {
-    height: 400px;
-    object-fit: cover;
-}
-.about-me-wrapper > p {
-    box-shadow: 1px 1px 2vw rgb(128, 125, 113),
-    2px 1px 4vw rgb(93, 91, 83);
-    padding: 1em;
-    line-height: 1.5em;
-    border-radius: 20px;
-    color: var(--primaryFontColor);
 }
 /* Footer */
 #footer {
