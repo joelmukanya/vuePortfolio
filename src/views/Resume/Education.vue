@@ -1,5 +1,5 @@
 <template>
-    <section class="container " id="education">
+    <section class="container" id="education">
       <h3 class="display-3 text-center">Education</h3>
       <div class="row d-flex flex-column flex-wrap g-3 text-white">
         <div class="edu-col col col-md-6" v-for="(educ, index) in educations" :key="index">
