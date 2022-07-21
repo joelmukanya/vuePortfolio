@@ -41,6 +41,17 @@
 </template>
 <script>
 export default {
+  data() {
+    return {
+      testimonias: [
+        {
+          fullname: '',
+          message: '',
+          url: ''
+        }
+      ]
+    }
+  },
     computed: {
         getProfiles() {
             return this.$store.state.profiles;

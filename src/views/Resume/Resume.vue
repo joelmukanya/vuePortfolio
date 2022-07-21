@@ -26,7 +26,11 @@
     </div>
     <div class="row d-flex justify-content-center my-3">
       <div class="col-md-4">
-        <button class="btn btn-primary my-3">Download CV</button>
+        <a href="https://drive.google.com/uc?export=download&id=1f2lqiA0Eq2kjP-7tQp2qJZ9ZIdbgIIDp" target="_blank">
+        <button class="btn btn-primary my-3">Download CV
+          <i class="bi bi-cloud-arrow-down"></i>
+        </button>
+        </a>
       </div>
     </div>
   </div>

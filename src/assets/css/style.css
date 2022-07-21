@@ -85,6 +85,17 @@ section .edu-col:nth-child(odd) {
     background-color: var(--grayBgColor);
     padding: 0 5px;
 }
+/* contact */
+.contact-form {
+    margin: auto;
+    width: 40vw;
+}
+
+.contact-form input, .contact-form textarea,
+.contact-form button {
+    box-shadow: 1vw 1vw 1vw rgba(29, 29, 26, 0.7);
+}
+
 /* Media query */
 @media screen and (max-width: 600px) {
     /* Header */
@@ -121,6 +132,10 @@ section .edu-col:nth-child(odd) {
     #developer::before {
         font-size: 3rem;
         display: block;
+    }
+    /* contact form */
+    .contact-form  {
+        width: fit-content;
     }
 }
 /* Footer */
