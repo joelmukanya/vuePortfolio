@@ -5,7 +5,6 @@
     <AboutMe />
     <SkillsComponent/>
     <TestimonialComponent/>
-    <Education />
   </div>
 </template>
 
@@ -14,14 +13,12 @@ import LandingPage from './LandingPage.vue'
 import AboutMe from './AboutMe.vue'
 import SkillsComponent from './SkillsComponent.vue'
 import TestimonialComponent from './TestimonialComponent.vue'
-import Education from './Education.vue'
 export default {
   components: {
     LandingPage,
     AboutMe,
     SkillsComponent,
     TestimonialComponent,
-    Education
   }
 }
 </script>

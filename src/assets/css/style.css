@@ -4,7 +4,8 @@
 /* root : define some custom variables*/
 :root {
     --grayBgColor: rgba(93, 97, 100, .4);
-    --boxShadow: 2vw .5vw 2vw white; 
+    --boxShadow: 2vw .5vw 2vw white;
+    --darkBoxShadow: .5vw .5vw .5vw rgba(40, 40, 39, 0.6); 
     --primaryFontColor: white;
     --secFontColor: dark;
     --primaryBgColor: black;
@@ -27,6 +28,7 @@ div#main {
 /* heading */
 h1, h2, h3, h4, h5, h6 {
     color: #2c3e50;
+    padding: .5em 0;
 }
 /* On scroll, change the background color of the header component.*/
 .headerBgColor {
@@ -143,4 +145,18 @@ section .edu-col:nth-child(odd) {
     background-color: var(--secondaryBgColor);
     color: var(--primaryBgColor);
 }
+/* social media */
+.social-media i {
+    margin: 0 1em;
+    font-size: 5em;
+    text-shadow: .5vw .5vw .5vw rgba(52, 52, 50, 0.7);
+}
 
+.social-media a {
+    color: black;
+}
+.social-media a:hover{
+    transform: rotate(360);
+    color: darkslateblue;
+    transition: all .3s;
+}

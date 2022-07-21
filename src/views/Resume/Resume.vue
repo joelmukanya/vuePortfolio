@@ -1,6 +1,6 @@
 <template>
-  <div class="container">
-    <h2 class="display-2">Resume</h2>
+  <Education />
+  <div class="container my-3">
     <div class="row">
       <div class="col-md-4">
         <img class="img-thumbnail rounded-circle" :src="this.$store.state.profiles[1].url" alt="Joel's Profile"/>
@@ -37,9 +37,10 @@
 </template>
 
 <script>
-
+import Education from './Education.vue'
 export default {
   components: {
+    Education,
   }
 }
 </script>

@@ -1,19 +1,27 @@
 <template>
     <div id="footer" class="container-fluid bg-gradient">
         <div class="row">
-            <aside class="col-md-6">
+            <aside class="col-md-4">
                 <h4 class="display-4">Copyright</h4>
                 <p class="lead">Joel's Portofio &copy; 
                     <span class="currYear">{{getCurrYear}}</span>
                 </p>
             </aside>
-            <aside class="col-md-6">
-                <h4 class="display-4">Navigation</h4>
-                <ul class="navbar-nav ms-auto mb-2 mb-lg-0"> 
-                    <li class="nav-item">
-                        <router-link to="/" class="routerLink">About</router-link> 
-                    </li>
-                </ul>
+            <aside class="col-md-8">
+                <h4 class="display-4">Social Media</h4>
+                <div class="ms-auto "> 
+                    <div class="col">
+                        <span class="social-media">
+                            <a href="https://www.linkedin.com/in/joel-tshimanga-mukanya-b4b27834/" target="_blank"><i class="bi bi-linkedin" hi></i></a>
+                        </span>
+                        <span class="social-media">
+                            <a href="https://www.youtube.com/channel/UCNoBN4_Ho5kXoyJHc4MtD0Q" target="_blank"><i class="bi bi-youtube"></i></a>
+                        </span>
+                        <span class="social-media">
+                            <a href="https://www.facebook.com/jtdevmayer" target="_blank"><i class="bi bi-facebook"></i></a>
+                        </span>
+                    </div>
+                </div>
             </aside>
         </div>
     </div>

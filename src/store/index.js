@@ -3,11 +3,6 @@ import { createStore } from 'vuex'
 export default createStore({
   state: {
     jobTitle : ["a CEO & Founder", "an IT Lecturer", "a Software Developer","a SQL Developer", "a Web Developer"],
-    // Declaring variables
-    cnt : 0,
-    title : "",
-    index : 0,
-    letter : "",
     title: 'Joel\'s Portfolio',
     profiles: [
       {
@@ -72,6 +67,57 @@ export default createStore({
         'fullname': 'Ruth Mukanya',
         'profile': 'https://i.postimg.cc/DyGHNwPV/ruth.jpg',
         'description': 'Joel is a nice person. Someone really reliable and honest. He always does his work honestly and makes sure everything is well organized.',
+      }
+    ],
+    educations: [
+      {
+        year: 2020,
+        schoolName: 'Data Camp',
+        description: 'I got my certificates on Data science',
+        certificateUrl: 'https://drive.google.com/file/d/1-f1yRukcXLo0e8ip3Cb7Z3D29Er9ENn_/view',
+        optained: 'Certifate'
+      },
+      {
+        year: 2019,
+        schoolName: 'Data Camp',
+        description: 'I got my certificates on Advanced to Python',
+        certificateUrl: 'https://drive.google.com/file/d/1qd2xS-HvI4c_C4vf1-Z1R_bPxzF7SZ-t/view',
+        optained: 'Certifate'
+      },
+      {
+        year: 2018,
+        schoolName: 'Data Camp',
+        description: 'I got my certificates on Intro to Python',
+        certificateUrl: 'https://drive.google.com/file/d/1-_DBHhxHKGS3Gqsy5eJ-_16WJN50OfXX/view',
+        optained: 'Certifate'
+      },
+      {
+        year: 2015,
+        schoolName: 'Study Jams',
+        description: 'I got my certificates on Intro to Android Developer',
+        certificateUrl: 'https://drive.google.com/file/d/102891ip_JFl_NEwW942zbvbkG7SXHx0G/view',
+        optained: 'Certifate'
+      },
+      {
+        year: 2014,
+        schoolName: 'Tshwane University of Technology',
+        description: 'I got my diploma on Software Engineering',
+        certificateUrl: '',
+        optained: 'Diploma'
+      },
+      {
+        year: 2005,
+        schoolName: 'Havatech',
+        description: 'Completed my course on PC Engineering',
+        certificateUrl: '',
+        optained: 'Certifate'
+      },
+      {
+        year: 2000,
+        schoolName: 'Technical & Commercial Institute',
+        description: 'Matric / Grade 12',
+        certificateUrl: '',
+        optained: 'Certifate'
       }
     ]
   },

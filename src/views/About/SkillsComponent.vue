@@ -3,11 +3,14 @@
     <h2 class="display-2">Skills</h2>
     <div class="d-flex flex-wrap justify-content-evenly">
         <div class="row d-flex flex-column my-2 mx-1" v-for="(skill, index) in skills" :key="index">
-        <div class="col">
-            <p class="h4 lead text-white">{{skill.title}}</p>
-        </div>
-        <div class="col">
-        </div>
+            <div class="col">
+                <p class="h4 lead text-white">{{skill.title}}</p>
+            </div>
+            <div class="col">
+                <span class="start-wrapper">
+                    <i class="bi bi-star-fill stars" v-for="c in 5" :key="c"></i>
+                </span>
+            </div>
         </div>
     </div>
   </section>
@@ -15,44 +18,27 @@
 
 <script>
 export default {
-    data() {
-        return {
-            currPerc: 0,
-            cnt: null
-        }
-    },
     computed: {
         skills() {
             return this.$store.state.skills
         }
     },
-    methods: {
-        progressBarTimer() {
-            const navBar = document.querySelector('.progress-bar');
-            const observer = new IntersectionObserver(entries => {
-                entries.forEach( entry => {
-                    entry.target.classList.toggle('prgAnimation', entry.isIntersecting);
-                })
-            });
-            observer.observe(navBar);
-        }
-    },
-    updated() {
-        this.progressBarTimer();
-    }
 }
 </script>
 
 <style>
-.prgAnimation{
-    animation: progress-animation 10s alternate forwards;
+.stars{
+    animation: stars-animation 2s infinite linear;
 }
-@keyframes progress-animation {
+@keyframes stars-animation {
     from {
-        width: 0;
+        font-size: .7em;
+        color: darkgreen;
     }
     to{
-        width: 100%;
+        width: 2em;
+        text-shadow: var(--darkBoxShadow);
     }
 }
+
 </style>
