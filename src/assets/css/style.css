@@ -122,7 +122,8 @@ section .edu-col:nth-child(odd) {
     }
     /* Profile img */
     .profile-img{
-        height: fit-content
+        height: fit-content;
+        border-radius: 50px;
     }
     #landing div.row {
         min-height: 0vh!important;
