@@ -19,6 +19,6 @@ export default {
     AboutMe,
     SkillsComponent,
     TestimonialComponent,
-  }
+  },
 }
 </script>

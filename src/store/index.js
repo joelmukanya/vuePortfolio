@@ -119,6 +119,32 @@ export default createStore({
         certificateUrl: '',
         optained: 'Certifate'
       }
+    ],
+    projects: [
+      {
+        id: 1,
+        name: 'Rainbow',
+        description: 'Rainbow project was build using plain html5, css3 only',
+        imageUrl: 'https://i.postimg.cc/FKr61g5m/rainbow.png',
+        gihubLink: 'https://github.com/joelmukanya/rainbow',
+        hostedLink: 'https://rainbowbyjoel.netlify.app'
+      },
+      {
+        id: 2,
+        name: 'Bootstrap Portfolio',
+        description: 'This project was build using HTML5, CSS3, JS, and Bootstrap',
+        imageUrl: 'https://i.postimg.cc/XJh12RZ7/portfolio.png',
+        gihubLink: 'https://github.com/joelmukanya/joel_portfolio',
+        hostedLink: 'https://joelmukanyaportfolio.netlify.app'
+      },
+      {
+        id: 3,
+        name: 'Vue Portfolio',
+        description: 'Rainbow project was build Vue 3, router, and store',
+        imageUrl: 'https://i.postimg.cc/s2KYq8yL/vue-portfolio.png',
+        gihubLink: 'https://github.com/joelmukanya/vuePortfolio',
+        hostedLink: 'https://joelmukanya-vue-portfoli-586ad.web.app/'
+      }
     ]
   },
   getters: {
