@@ -45,6 +45,7 @@ h4{
     font-size: 1em;
     animation: spinningStars 2s infinite;
     transition: all;
+    margin: 0 10px;
 }
 .landing-p::after{
     content: '*';
@@ -52,6 +53,7 @@ h4{
     font-size: 1em;
     animation: spinningStars 1s infinite;
     transition: all;
+    margin: 0 10px;
 }    
 /* animation */
 @keyframes spinningStars {
@@ -85,12 +87,17 @@ h4{
 /* Testimonials */
 .testimonial-img {
     display: block;
-    height: 15rem;
+    height: 20rem;
     object-fit: cover;
-    margin: auto;
-    padding: 5px;
+    position: relative;
+    bottom: 0;
 }
-
+section#testimonial .card {
+    width: 100vw;
+    align-self: center;
+    display: flex;
+    justify-content: space-between;
+}
 /* Education */
 section#education {
     scroll-margin: 8em;
@@ -170,9 +177,19 @@ section .edu-col:nth-child(odd) {
         height: 10rem;
         object-fit: cover;
     }
+    .card-body{
+        padding: 0;
+    }
+    .landing-p::after{
+        animation-play-state: paused;
+    }
+    .landing-p::before{
+        animation-play-state: paused;
+    }
     #developer::before {
         font-size: 3rem;
         display: block;
+        animation-play-state: paused;
     }
     /* contact form */
     .contact-form  {
