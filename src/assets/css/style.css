@@ -26,9 +26,41 @@ div#main {
     z-index: -1;
 }
 /* heading */
-h1, h2, h3, h4, h5, h6 {
+h1, h2, h3, h5, h6 {
     color: #2c3e50;
     padding: .5em 0;
+}
+h4{
+    color: #2c3e50;
+}
+/* Landing Page */
+.landing-p {
+    text-shadow: .5vw 1vw .5vw rgba(205, 198, 198, 0.5);
+    line-height: 5em;
+    font-size: 5em;
+}
+.landing-p::before{
+    content: '*';
+    color: darkgreen;
+    font-size: 1em;
+    animation: spinningStars 2s infinite;
+    transition: all;
+}
+.landing-p::after{
+    content: '*';
+    color: darkgreen;
+    font-size: 1em;
+    animation: spinningStars 1s infinite;
+    transition: all;
+}    
+/* animation */
+@keyframes spinningStars {
+    from{
+        transform: rotate(10deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
 /* On scroll, change the background color of the header component.*/
 .headerBgColor {
@@ -52,8 +84,11 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Testimonials */
 .testimonial-img {
+    display: block;
     height: 15rem;
     object-fit: cover;
+    margin: auto;
+    padding: 5px;
 }
 
 /* Education */
@@ -120,10 +155,8 @@ section .edu-col:nth-child(odd) {
         display: inline-block;
         margin: 3px ;
     }
-    /* Profile img */
-    .profile-img{
-        height: fit-content;
-        border-radius: 50px;
+    .landing-p {
+        font-size: 3em;
     }
     #landing div.row {
         min-height: 0vh!important;
@@ -131,6 +164,11 @@ section .edu-col:nth-child(odd) {
     /* Developer */
     #developer {
         font-size: 3rem;
+    }
+    /* Testimonial image */
+    .testimonial-img {
+        height: 10rem;
+        object-fit: cover;
     }
     #developer::before {
         font-size: 3rem;
@@ -149,7 +187,7 @@ section .edu-col:nth-child(odd) {
 /* social media */
 .social-media i {
     margin: 0 1em;
-    font-size: 5em;
+    font-size: 3em;
     text-shadow: .5vw .5vw .5vw rgba(52, 52, 50, 0.7);
 }
 

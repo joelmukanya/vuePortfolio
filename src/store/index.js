@@ -54,11 +54,6 @@ export default createStore({
     ],
     testimonials: [
       {
-        'fullname': 'Sarah Mukanya',
-        'profile': 'https://i.postimg.cc/15ssZG6W/11.jpg',
-        'description': 'Pending',
-      },
-      {
         'fullname': 'Rachel Mukanya',
         'profile': 'https://i.postimg.cc/SRBL8qnC/rachel.jpg',
         'description': 'Joel never ceases to amaze me with the vast amount of knowledge he has acquired over the years in software development. He is truly a great mentor.',

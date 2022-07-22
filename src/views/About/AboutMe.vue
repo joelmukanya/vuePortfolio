@@ -21,19 +21,16 @@
         </div>
         <div class="col-md-6 about-me-wrapper">
             <p class="lead text-center">
-                My name is Joel Tshimanga Mukanya, I was born in Durban, Kwazulu
-                Natal but was raised in pretoria gauteng.
+                My name is Joel Tshimanga Mukanya, I was born in Durban, Kwazulu Natal but was raised in Pretoria.
             </p>
             <p class="lead text-center">
-                I graduated at Tshwane university of technology in 2014 as a
-                Software Developer and I've gain knowledge in data science,
+                I graduated at Tshwane University of Technology in 2014 as a
+                Software Developer and I've gained knowledge in data science,
                 database, programming, data analysis, project management and many
                 more.
             </p>
             <p class="lead text-center">
-                I am currently employed as a coding professor at Life Choices and
-                I've my own business, JT Devs. I am also part-time YouTuber where
-                I am teaching people different programming languages.
+                I am currently employed as a coding lecturer at Life Choices and also run my own business, JT Devs. As a part-time YouTuber, I teach people different programming languages.
             </p>
         </div>
     </div>
@@ -41,17 +38,6 @@
 </template>
 <script>
 export default {
-  data() {
-    return {
-      testimonias: [
-        {
-          fullname: '',
-          message: '',
-          url: ''
-        }
-      ]
-    }
-  },
     computed: {
         getProfiles() {
             return this.$store.state.profiles;

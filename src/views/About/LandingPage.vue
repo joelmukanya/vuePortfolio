@@ -1,32 +1,18 @@
 <template>
     <section id="landing" class="container">
-        <div class="row min-vh-100 bg-gradient">
-            <img class="img-fluid profile-img" :src="this.$store.state.profiles[0].url" alt="joel"/>
-        </div>
-        <div class="row">
-            <div class="wrapper col-md bg-transparent">
-              <div class="row d-flex justify-content-center align-content-center">
-                <div class="col">
-                  <h2 id="developer" class="display-2 my-4">I'm a developer</h2>
-                </div>
-              </div>
-            </div>        
+        <div class="row vh-50 bg-gradient">
+            <p class="lead h3 landing-p d-flex justify-content-center align-items-center">Joel Mukanya</p>
+            <div class="row d-flex justify-content-center align-content-center">
+            <div class="col">
+                <h2 id="developer" class="display-2 my-4 animate__animated backInDown" >I'm a developer</h2>
+            </div>
+            </div>
         </div>
     </section>
 </template>
 
 <script>
 export default {
-  data() {
-    return {
-        
-    }
-  },
-  methods: {
-    mouseHover() {
-      
-    }
-  }
 }
 </script>
 
